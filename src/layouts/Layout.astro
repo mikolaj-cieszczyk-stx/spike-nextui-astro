@@ -1,28 +1,51 @@
 ---
 import "../styles.css";
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
-import { Button } from "@nextui-org/react";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro + NextUI Integration</title>
   </head>
-  <body>
-    <Button color="primary" client:visible>My button</Button>
-    <slot />
+  <body class="bg-gray-100 text-gray-900 min-h-screen">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md p-4 z-10">
+      <div class="container mx-auto">
+        <h1 class="text-2xl font-bold">Astro + NextUI Integration</h1>
+      </div>
+    </header>
+
+    <main class="mt-16 mb-16 container mx-auto p-6">
+      <div class="bg-white rounded-lg shadow p-6">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4">
+      <div class="container mx-auto text-center">
+        <p>
+          <a
+            href="https://nextui.org/docs/guide/introduction"
+            class="font-medium text-white dark:text-blue-500 hover:underline"
+            target="_blank">NextUI Docs</a
+          > /
+          <a
+            href="https://github.com/nextui-org/nextui"
+            class="font-medium text-white dark:text-blue-500 hover:underline"
+            target="_blank">GitHub</a
+          > /
+          <a
+            href="https://www.npmjs.com/package/@nextui-org/react"
+            class="font-medium text-white dark:text-blue-500 hover:underline"
+            target="_blank">NPM</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
+
 <style is:global>
   :root {
     --accent: 136, 58, 234;
@@ -39,15 +62,8 @@ import { Button } from "@nextui-org/react";
     font-family: system-ui, sans-serif;
     background: #13151a;
   }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
+  body {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
   }
 </style>

@@ -1,0 +1,34 @@
+---
+import Button from "./atoms/Button";
+import { PlusIcon } from "./atoms/PlusIcon";
+---
+
+<div>
+  <span class="text-blue-600 text-2xl font-bold">Buttons</span>
+
+  <div class="grid grid-cols-8 gap-16 mt-6">
+    <Button variant="primary">Button</Button>
+
+    <Button variant="icon">
+      Button <PlusIcon />
+    </Button>
+
+    <Button variant="secondary">Button</Button>
+
+    <Button variant="secondary">
+      Button <PlusIcon />
+    </Button>
+
+    <Button variant="primary" disabled> Disabled </Button>
+
+    <Button variant="icon" disabled>
+      Disabled <PlusIcon />
+    </Button>
+
+    <Button variant="secondary" disabled> Disabled </Button>
+
+    <Button variant="secondary" disabled>
+      Disabled <PlusIcon />
+    </Button>
+  </div>
+</div>
