@@ -1,6 +1,8 @@
 # Astro + NextUI Integration
 
-This is a mini project demonstrating the integration of [Astro](https://docs.astro.build/) with [NextUI]([https://daisyui.com/docs/](https://nextui.org/docs/guide/introduction)). Explore the live deployment [here](https://spike-nextui-astro.vercel.app/).
+This is a mini project demonstrating the integration of [Astro](https://docs.astro.build/) with [NextUI]([https://daisyui.com/docs/](https://nextui.org/docs/guide/introduction)). 
+
+Explore the live deployment [here](https://spike-nextui-astro.vercel.app/).
 
 ## Features
 
