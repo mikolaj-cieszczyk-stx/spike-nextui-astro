@@ -7,7 +7,7 @@ interface ButtonProps {
   children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   disabled = false,
   children,
@@ -38,5 +38,3 @@ const Button: React.FC<ButtonProps> = ({
     </NextUiButton>
   );
 };
-
-export default Button;

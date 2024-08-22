@@ -11,33 +11,64 @@ import "../styles.css";
   </head>
   <body class="bg-gray-100 text-gray-900 min-h-screen">
     <header class="fixed top-0 left-0 w-full bg-white shadow-md p-4 z-10">
-      <div class="container mx-auto">
+      <div class="flex justify-between items-center mx-auto">
         <h1 class="text-2xl font-bold">Astro + NextUI Integration</h1>
-      </div>
-    </header>
-
-    <main class="mt-16 mb-16 container mx-auto p-6">
-      <div class="bg-white rounded-lg shadow p-6">
-        <slot />
-      </div>
-    </main>
-
-    <footer class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4">
-      <div class="container mx-auto text-center">
         <p>
+          <span class="font-medium">NextUI</span>
           <a
             href="https://nextui.org/docs/guide/introduction"
-            class="font-medium text-white dark:text-blue-500 hover:underline"
-            target="_blank">NextUI Docs</a
+            class="text-blue-600 dark:text-blue-500 hover:underline"
+            target="_blank">Docs</a
+          > /
+          <a
+            href="https://storybook.nextui.org/"
+            class="text-blue-600 dark:text-blue-500 hover:underline"
+            target="_blank">Storybook</a
           > /
           <a
             href="https://github.com/nextui-org/nextui"
-            class="font-medium text-white dark:text-blue-500 hover:underline"
+            class="text-blue-600 dark:text-blue-500 hover:underline"
             target="_blank">GitHub</a
           > /
           <a
             href="https://www.npmjs.com/package/@nextui-org/react"
-            class="font-medium text-white dark:text-blue-500 hover:underline"
+            class="text-blue-600 dark:text-blue-500 hover:underline"
+            target="_blank">NPM</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <main class="mt-16 mb-16 container mx-auto p-6">
+      <div class="bg-white rounded-lg shadow p-10">
+        <slot />
+      </div>
+    </main>
+
+    <footer
+      class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 z-10"
+    >
+      <div class="container mx-auto text-center">
+        <p>
+          <span class="font-medium text-yellow-400">NextUI</span>
+          <a
+            href="https://nextui.org/docs/guide/introduction"
+            class="text-white dark:text-blue-500 hover:underline"
+            target="_blank">Docs</a
+          > /
+          <a
+            href="https://storybook.nextui.org/"
+            class="text-white dark:text-blue-500 hover:underline"
+            target="_blank">Storybook</a
+          > /
+          <a
+            href="https://github.com/nextui-org/nextui"
+            class="text-white dark:text-blue-500 hover:underline"
+            target="_blank">GitHub</a
+          > /
+          <a
+            href="https://www.npmjs.com/package/@nextui-org/react"
+            class="text-white dark:text-blue-500 hover:underline"
             target="_blank">NPM</a
           >
         </p>

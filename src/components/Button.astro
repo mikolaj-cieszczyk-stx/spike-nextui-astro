@@ -1,0 +1,38 @@
+---
+import { Button as NextUiButton } from "./atoms/Button";
+import { PlusIcon } from "./atoms/PlusIcon";
+---
+
+<div>
+  <span class="text-blue-600 text-2xl font-bold">Button</span>
+
+  <div class="grid grid-cols-8 gap-16 mt-6">
+    <NextUiButton client:load variant="primary">Button</NextUiButton>
+
+    <NextUiButton client:load variant="icon">
+      Button <PlusIcon />
+    </NextUiButton>
+
+    <NextUiButton client:load variant="secondary">Button</NextUiButton>
+
+    <NextUiButton client:load variant="secondary">
+      Button <PlusIcon />
+    </NextUiButton>
+
+    <NextUiButton client:load variant="primary" disabled>
+      Disabled
+    </NextUiButton>
+
+    <NextUiButton client:load variant="icon" disabled>
+      Disabled <PlusIcon />
+    </NextUiButton>
+
+    <NextUiButton client:load variant="secondary" disabled>
+      Disabled
+    </NextUiButton>
+
+    <NextUiButton client:load variant="secondary" disabled>
+      Disabled <PlusIcon />
+    </NextUiButton>
+  </div>
+</div>
